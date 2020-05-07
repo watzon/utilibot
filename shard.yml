@@ -1,0 +1,22 @@
+name: utilibot
+version: 0.1.0
+
+authors:
+  - Chris Watson <cawatson1993@gmail.com>
+
+targets:
+  utilibot:
+    main: src/utilibot.cr
+
+dependencies:
+  tourmaline:
+    github: protoncr/tourmaline
+    branch: master
+    # path: /home/watzon/Projects/personal/tourmaline
+  rot26:
+    github: watzon/rot26
+    branch: master
+
+crystal: 0.34.0
+
+license: MIT

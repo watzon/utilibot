@@ -1,0 +1,14 @@
+version: 1.0
+shards:
+  db:
+    github: crystal-lang/crystal-db
+    version: 0.9.0
+
+  rot26:
+    github: watzon/rot26
+    commit: d42b35af03e5041a239ada8e9196757897701fd2
+
+  tourmaline:
+    github: protoncr/tourmaline
+    commit: 86fb7dc7d5ebc69a7c2a2bce094e3b4fcfabdce2
+
