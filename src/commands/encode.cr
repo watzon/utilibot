@@ -10,8 +10,8 @@ class Utilibot < Tourmaline::Client
   - `base64` for base64 encoding
   - `rot(n)` for rotational encoding, for example `rot32`
   - `uri` for uri encoding
-  - `binary` for binary encodind
-  - `hex` for hex encodind
+  - `binary` for binary encoding
+  - `hex` for hex encoding
   - `data` for encoding a document to a data URI
   MARKDOWN
 
