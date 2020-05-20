@@ -4,7 +4,7 @@ class Utilibot < Tourmaline::Client
   use `/help command` to get more specific usage information. For instance `/help random`.
   MARKDOWN
 
-  @[Command("help")]
+  @[Command("help", private_only: true)]
   def help_command(client, update)
     message = update.message.not_nil!
     command = update.context["text"].as_s.strip.downcase
