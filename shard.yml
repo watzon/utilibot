@@ -16,6 +16,9 @@ dependencies:
   rot26:
     github: watzon/rot26
     branch: master
+  cadmium_language_detector:
+    github: cadmiumcr/language_detector
+    branch: master
 
 crystal: 0.34.0
 

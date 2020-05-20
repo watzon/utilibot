@@ -1,5 +1,9 @@
 version: 1.0
 shards:
+  cadmium_language_detector:
+    github: cadmiumcr/language_detector
+    commit: 08dd5c5fd30e66895319236838d3bf4c69176eea
+
   db:
     github: crystal-lang/crystal-db
     version: 0.9.0
@@ -10,5 +14,5 @@ shards:
 
   tourmaline:
     github: protoncr/tourmaline
-    commit: 86fb7dc7d5ebc69a7c2a2bce094e3b4fcfabdce2
+    commit: 4eb69a6c94fd421085d08723db6105e57d7d631b
 
