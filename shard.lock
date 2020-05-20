@@ -1,8 +1,8 @@
 version: 1.0
 shards:
   cadmium_language_detector:
-    path: ../cadmium/language_detector
-    version: 0.1.0
+    github: cadmiumcr/language_detector
+    commit: 4020ac783e5962ff7910c17fe34d5c6d081b94cd
 
   db:
     github: crystal-lang/crystal-db
