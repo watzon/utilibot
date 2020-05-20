@@ -19,7 +19,8 @@ class Utilibot < Tourmaline::Client
         return message.reply("No text to operate on")
       end
 
-      likely = Cadmium::LanguageDetector.new.detect_all(text).to_a[0, 5].reject { |_, v| v > 1.0 }
+      puts text
+      likely = Cadmium::LanguageDetector.new.detect_all(text).to_a[0, 5]
 
       response = String.build do |str|
         str << "The most likely languages (based on my training data):\n\n"
