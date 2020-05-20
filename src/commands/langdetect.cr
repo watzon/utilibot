@@ -19,13 +19,18 @@ class Utilibot < Tourmaline::Client
         return message.reply("No text to operate on")
       end
 
-      likely = Cadmium::LanguageDetector.new.detect_all(text).to_a
-        .select { |_, v| v <= 1.0 && v >= 0.7 }[0, 5]
+      likely = Cadmium::LanguageDetector.new.detect_all(text).to_a[0, 5].reject { |_, v| v > 1.0 }
 
       response = String.build do |str|
-        str << "The most likely languages (based on my training data):\n"
-        likely.each_with_index do |(k, v), i|
+        str << "The most likely languages (based on my training data):\n\n"
+
+        likely.each do |k, v|
           str << "`#{k}: #{v}`\n"
+        end
+
+        if text.size < 80
+          str << "\n"
+          str << "`Note: the text you sent is less than 80 characters. For best results, please send a longer sample.`"
         end
       end
 
