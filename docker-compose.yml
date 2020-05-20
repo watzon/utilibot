@@ -4,3 +4,4 @@ services:
   utilibot:
     build: .
     restart: always
+    env_file: .env
