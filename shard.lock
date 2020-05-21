@@ -8,9 +8,29 @@ shards:
     github: crystal-lang/crystal-db
     version: 0.9.0
 
+  identicon:
+    github: watzon/identicon
+    commit: 9060d36bc565a50f1f0de9354e189196bcc33d1d
+
+  pcf-parser:
+    github: l3kn/pcf-parser
+    version: 0.1.1
+
   rot26:
     github: watzon/rot26
     commit: d42b35af03e5041a239ada8e9196757897701fd2
+
+  stumpy_core:
+    github: stumpycr/stumpy_core
+    version: 1.9.1
+
+  stumpy_png:
+    github: stumpycr/stumpy_png
+    version: 4.5.2
+
+  stumpy_utils:
+    github: watzon/stumpy_utils
+    commit: 1dafa77a713b4b18f71e26771893c4870b75ca40
 
   tourmaline:
     github: protoncr/tourmaline
